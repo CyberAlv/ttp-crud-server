@@ -11,7 +11,12 @@ console.log("Opening database connection");
 const db = new Sequelize(
   process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`,
   { logging: false }
+
+ 
+  
 );
+
+
 
 // Export our instance of Sequelize, which will be modified with models;
 module.exports = db;
